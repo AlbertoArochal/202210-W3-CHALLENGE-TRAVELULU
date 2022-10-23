@@ -11,5 +11,8 @@
     "license": "ISC",
     "dependencies": {
         "sass": "^1.55.0"
+    },
+    "devDependencies": {
+        "husky": "^8.0.1"
     }
 }
