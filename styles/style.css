@@ -51,6 +51,7 @@ header .burgerbutton div {
   font-family: "Poppins";
   font-size: 24px;
   font-weight: 700;
+  max-width: 350px;
 }
 .searchmenu select {
   width: 421px;
@@ -60,6 +61,21 @@ header .burgerbutton div {
   font-weight: 400;
   font-size: 16px;
   background-color: rgb(247, 247, 252);
+  padding-left: 24px;
+  cursor: pointer;
+  appearance: treeheadersortarrow;
+}
+.searchmenu button {
+  background-color: rgb(237, 46, 126);
+  color: white;
+  width: 421px;
+  height: 55px;
+  margin-top: 25px;
+  border-radius: 40px;
+  border: none;
+  font-weight: 600;
+  font-family: "Poppins";
+  font-size: 16px;
 }
 
 @media (min-width: 480px) {
