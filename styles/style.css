@@ -4,30 +4,33 @@
   margin: 0;
 }
 
-header {
-  max-width: 1440px;
-  min-width: 481px;
-  background-color: tomato;
-  display: flex;
-  justify-content: space-between;
-}
-header h1 {
-  font-family: "Poppins";
-  color: rgb(95, 46, 234);
-}
-header .burgerbutton {
-  width: fit-content;
-  height: fit-content;
-  align-content: center;
-  background-color: aqua;
-  margin: auto;
-}
-header .burgerbutton div {
-  width: 28px;
-  height: 4px;
-  background-color: rgb(95, 46, 234);
-  margin: 3px 0;
-  border-radius: 20px;
+@media (max-width: 481px) {
+  header {
+    min-width: 481px;
+    height: 81px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 34px;
+    align-items: center;
+    border-bottom: 1px solid rgb(188, 164, 255);
+  }
+  header h1 {
+    font-family: "Poppins";
+    color: rgb(95, 46, 234);
+  }
+  header .burgerbutton {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    padding-top: 3px;
+  }
+  header .burgerbutton div {
+    width: 28px;
+    height: 4px;
+    background-color: rgb(95, 46, 234);
+    margin: 3px 0;
+    border-radius: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
