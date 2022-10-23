@@ -1,14 +1,15 @@
 {
-  "name": "challenge",
-  "version": "1.0.0",
-  "description": "Challenge Semana 3 ISDI Bootcamp",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Alberto Rocha && Christian Martí",
-  "license": "ISC",
-  "dependencies": {
-    "sass": "^1.55.0"
-  }
+    "name": "challenge",
+    "version": "1.0.0",
+    "description": "Challenge Semana 3 ISDI Bootcamp",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "sass": "sass sass:styles -w"
+    },
+    "author": "Alberto Rocha && Christian Martí",
+    "license": "ISC",
+    "dependencies": {
+        "sass": "^1.55.0"
+    }
 }
