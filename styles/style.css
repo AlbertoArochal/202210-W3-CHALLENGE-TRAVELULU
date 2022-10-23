@@ -4,34 +4,49 @@
   margin: 0;
 }
 
-@media (max-width: 481px) {
+header {
+  height: 122px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(188, 164, 255);
+  position: fixed;
+}
+header h1 {
+  font-family: "Poppins";
+  color: rgb(95, 46, 234);
+  margin-left: 45px;
+  font-weight: 700px;
+  font-size: 34.38px;
+  line-height: 55px;
+}
+header .burgerbutton:hover {
+  cursor: pointer;
+}
+header .burgerbutton {
+  width: fit-content;
+  height: fit-content;
+  padding-top: 3px;
+  margin-right: 67px;
+}
+header .burgerbutton div {
+  width: 28px;
+  height: 4px;
+  background-color: rgb(95, 46, 234);
+  margin: 3px 0;
+  border-radius: 20px;
+}
+
+@media (min-width: 600px) {
   header {
-    min-width: 481px;
-    height: 81px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgb(188, 164, 255);
-    position: fixed;
+    height: 122px;
   }
   header h1 {
-    font-family: "Poppins";
-    color: rgb(95, 46, 234);
-    margin-left: 45px;
-    font-weight: 700px;
+    margin-left: 107.5px;
   }
   header .burgerbutton {
-    width: fit-content;
-    height: fit-content;
-    padding-top: 3px;
-    margin-right: 67px;
-  }
-  header .burgerbutton div {
-    width: 28px;
-    height: 4px;
-    background-color: rgb(95, 46, 234);
-    margin: 3px 0;
-    border-radius: 20px;
+    margin-right: 64px;
   }
 }
 
