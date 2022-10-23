@@ -12,19 +12,21 @@
         height: 81px;
         display: flex;
         justify-content: space-between;
-        margin-top: 34px;
         align-items: center;
         border-bottom: 1px solid variables.$headerborder;
+        position: fixed;
 
         h1 {
             font-family: variables.$font;
             color: variables.$headerFont;
+            margin-left: 45px;
+            font-weight: 700px;
         }
         .burgerbutton {
             width: fit-content;
             height: fit-content;
-            margin: 0 auto;
             padding-top: 3px;
+            margin-right: 67px;
 
             div {
                 width: 28px;
