@@ -11,7 +11,6 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(188, 164, 255);
-  position: fixed;
 }
 header h1 {
   font-family: "Poppins";
@@ -38,7 +37,32 @@ header .burgerbutton div {
   border-radius: 20px;
 }
 
-@media (min-width: 600px) {
+.searchmenu {
+  width: 421px;
+  height: 385px;
+  margin: 62px 30px 0px 30px;
+}
+.searchmenu .searchmenu__selectors * {
+  display: block;
+  margin-top: 25px;
+}
+.searchmenu h3 {
+  margin-top: 62px;
+  font-family: "Poppins";
+  font-size: 24px;
+  font-weight: 700;
+}
+.searchmenu select {
+  width: 421px;
+  height: 56px;
+  border-radius: 15px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  background-color: rgb(247, 247, 252);
+}
+
+@media (min-width: 480px) {
   header {
     height: 122px;
   }

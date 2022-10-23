@@ -13,7 +13,6 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid variables.$headerborder;
-    position: fixed;
 
     h1 {
         font-family: variables.$font;
@@ -42,7 +41,34 @@ header {
     }
 }
 
-@media (min-width: 600px) {
+.searchmenu {
+    width: 421px;
+    height: 385px;
+    margin: 62px 30px 0px 30px;
+
+    .searchmenu__selectors * {
+        display: block;
+        margin-top: 25px;
+    }
+
+    h3 {
+        margin-top: 62px;
+        font-family: variables.$font;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    select {
+        width: 421px;
+        height: 56px;
+        border-radius: 15px;
+        font-family: variables.$font;
+        font-weight: 400;
+        font-size: 16px;
+        background-color: rgba(247, 247, 252, 1);
+    }
+}
+
+@media (min-width: 480px) {
     header {
         height: 122px;
         h1 {
