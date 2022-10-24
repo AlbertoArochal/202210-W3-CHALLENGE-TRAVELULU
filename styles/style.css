@@ -47,7 +47,7 @@ header .burgerbutton div {
   margin-top: 25px;
 }
 .searchmenu h3 {
-  margin-top: 62px;
+  margin-top: 77px;
   font-family: "Poppins";
   font-size: 24px;
   font-weight: 700;
@@ -83,10 +83,27 @@ header .burgerbutton div {
     height: 122px;
   }
   header h1 {
-    margin-left: 107.5px;
+    margin-left: 135px;
   }
   header .burgerbutton {
     margin-right: 64px;
+  }
+  .searchmenu {
+    width: 802px;
+    margin-left: 130px;
+  }
+  .searchmenu .searchmenu__selectors {
+    display: flex;
+  }
+  .searchmenu h3 {
+    font-size: 32px;
+    width: 100%;
+    display: inline;
+    height: 34px;
+    margin-left: -5px;
+  }
+  .searchmenu button {
+    display: block;
   }
 }
 

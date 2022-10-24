@@ -52,7 +52,7 @@ header {
     }
 
     h3 {
-        margin-top: 62px;
+        margin-top: 77px;
         font-family: variables.$font;
         font-size: 24px;
         font-weight: 700;
@@ -89,10 +89,27 @@ header {
     header {
         height: 122px;
         h1 {
-            margin-left: 107.5px;
+            margin-left: 135px;
         }
         .burgerbutton {
             margin-right: 64px;
+        }
+    }
+    .searchmenu {
+        width: 802px;
+        margin-left: 130px;
+        .searchmenu__selectors {
+            display: flex;
+        }
+        h3 {
+            font-size: 32px;
+            width: 100%;
+            display: inline;
+            height: 34px;
+            margin-left: -5px;
+        }
+        button {
+            display: block;
         }
     }
 }
