@@ -10,7 +10,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgb(188, 164, 255);
+  border-bottom: 1px solid rgb(217, 219, 233);
 }
 header h1 {
   font-family: "Poppins";
@@ -39,7 +39,7 @@ header .burgerbutton div {
 
 .searchmenu {
   width: 421px;
-  height: 385px;
+  height: 252px;
   margin: 62px 30px 0px 30px;
 }
 .searchmenu .searchmenu__selectors * {
@@ -63,7 +63,6 @@ header .burgerbutton div {
   background-color: rgb(247, 247, 252);
   padding-left: 24px;
   cursor: pointer;
-  appearance: treeheadersortarrow;
 }
 .searchmenu button {
   background-color: rgb(237, 46, 126);
@@ -78,9 +77,10 @@ header .burgerbutton div {
   font-size: 16px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 482px) {
   header {
     height: 122px;
+    width: 1440px;
   }
   header h1 {
     margin-left: 135px;
@@ -88,12 +88,32 @@ header .burgerbutton div {
   header .burgerbutton {
     margin-right: 64px;
   }
+  section {
+    border-bottom: 1px solid rgb(217, 219, 233);
+  }
   .searchmenu {
-    width: 802px;
+    width: fit-content;
+    height: 200;
     margin-left: 130px;
   }
   .searchmenu .searchmenu__selectors {
     display: flex;
+  }
+  .searchmenu .searchmenu__selectors > :first-child {
+    width: 474px;
+    margin-right: 20px;
+  }
+  .searchmenu .searchmenu__selectors > :not(:first-child) {
+    width: 260px;
+    margin-right: 10px;
+  }
+  .searchmenu .searchmenu__selectors > :last-child {
+    display: inline;
+    cursor: pointer;
+    width: 156px;
+    height: 55px;
+    align-self: flex-start;
+    margin-left: 10px;
   }
   .searchmenu h3 {
     font-size: 32px;
@@ -103,7 +123,11 @@ header .burgerbutton div {
     margin-left: -5px;
   }
   .searchmenu button {
-    display: block;
+    display: inline;
+    cursor: pointer;
+    width: 156px;
+    height: 55px;
+    align-self: flex-start;
   }
 }
 
