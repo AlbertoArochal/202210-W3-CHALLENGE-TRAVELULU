@@ -77,6 +77,74 @@ header .burgerbutton div {
   font-size: 16px;
 }
 
+.searchbox {
+  display: flex;
+  justify-content: center;
+  left: 31px;
+  right: 30px;
+}
+.searchbox form {
+  border-radius: 20px;
+  background-color: rgb(42, 0, 162);
+  width: 420px;
+  height: 614px;
+  left: 31px;
+  top: 673px;
+  display: flex;
+  flex-direction: column;
+}
+.searchbox form h1 {
+  color: rgb(188, 164, 255);
+  font-family: "Poppins";
+  display: flex;
+  width: 90px;
+  height: 38px;
+  left: 71px;
+  top: 703px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.75px;
+  margin: 40px 290px 27px 30px;
+}
+.searchbox form div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.searchbox form div div {
+  display: flex;
+  margin-left: 35px;
+  margin-right: 33px;
+  justify-content: center;
+}
+.searchbox form div div label {
+  font-family: "Poppins";
+  color: rgb(243, 239, 255);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.75px;
+}
+.searchbox form div div select,
+.searchbox form div div input {
+  height: 59px;
+  width: 352px;
+  border-radius: 15px;
+  left: 60px;
+  top: calc(50% - 14px + 2.5px);
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.75px;
+  color: rgb(20, 20, 43);
+}
+.searchbox form div div input.searchbox__submit {
+  color: white;
+  border-radius: 45px;
+  background-color: rgb(237, 46, 126);
+}
+
 @media (min-width: 482px) {
   header {
     height: 122px;
@@ -128,6 +196,9 @@ header .burgerbutton div {
     width: 156px;
     height: 55px;
     align-self: flex-start;
+  }
+  .searchbox {
+    display: flex;
   }
 }
 

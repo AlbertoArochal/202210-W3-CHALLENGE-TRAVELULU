@@ -85,7 +85,75 @@ header {
 }
 
 .searchbox {
-    background-color: variables.$searchMenuBackground;
+    display: flex;
+    justify-content: center;
+    left: 31px;
+    right: 30px;
+
+    form {
+        border-radius: 20px;
+        background-color: variables.$searchMenuBackground;
+        width: 420px;
+        height: 614px;
+        left: 31px;
+        top: 673px;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            color: variables.$searchMenutittle;
+            font-family: variables.$font;
+            display: flex;
+            width: 90px;
+            height: 38px;
+            left: 71px;
+            top: 703px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 38px;
+            letter-spacing: 0.75px;
+            margin: 40px 290px 27px 30px;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+
+            div {
+                display: flex;
+                margin-left: 35px;
+                margin-right: 33px;
+                justify-content: center;
+
+                label {
+                    font-family: variables.$font;
+                    color: variables.$whitePrimary;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 28px;
+                    letter-spacing: 0.75px;
+                }
+                select,
+                input {
+                    height: 59px;
+                    width: 352px;
+                    border-radius: 15px;
+                    left: 60px;
+                    top: calc(50% - 28px / 2 + 2.5px);
+                    font-family: variables.$font;
+                    font-weight: 400;
+                    font-size: 16px;
+                    letter-spacing: 0.75px;
+                    color: variables.$titleActive;
+                }
+
+                input.searchbox__submit {
+                    color: white;
+                    border-radius: 45px;
+                    background-color: variables.$pinkbutton;
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 482px) {
@@ -145,5 +213,9 @@ header {
             height: 55px;
             align-self: flex-start;
         }
+    }
+
+    .searchbox {
+        display: flex;
     }
 }

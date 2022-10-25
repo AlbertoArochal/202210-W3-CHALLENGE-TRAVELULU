@@ -41,40 +41,49 @@
         </section>
 
         <! -- Espacio para Searchmenu -->
+
         <div class="searchbox">
-            <h1>Search</h1>
-            <div>
+            <form>
+                <h1>Search</h1>
                 <div>
-                    <label for="destination">Destination/property name</label>
-                    <select name="destination" id="destination">
-                        <option>Gold Coast</option>
-                    </select>
+                    <div>
+                        <label for="destination"
+                            >Destination/property name</label
+                        >
+                        <select name="destination" id="destination">
+                            <option>Gold Coast</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="check-in">Check-in date</label>
+                        <select name="check-in" id="check-in-date">
+                            <option>Check-in date</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="check-out">Check-out date</label>
+                        <select name="check-out" id="check-out-date">
+                            <option>Check-out date</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="travellers">Travellers</label>
+                        <input
+                            type="text"
+                            id="travellers"
+                            name="travellers"
+                            value="2 adults - 0 children"
+                        />
+                    </div>
+                    <div>
+                        <input
+                            type="submit"
+                            class="searchbox__submit"
+                            value="Search"
+                        />
+                    </div>
                 </div>
-                <div>
-                    <label for="check-in">Check-in date</label>
-                    <select name="check-in" id="check-in-date">
-                        <option>Check-in date</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="check-out">Check-out date</label>
-                    <select name="check-out" id="check-out-date">
-                        <option>Check-out date</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="travellers">Travellers</label>
-                    <input
-                        type="text"
-                        id="travellers"
-                        name="travellers"
-                        value="2 adults - 0 children"
-                    />
-                </div>
-                <div>
-                    <button id="seachbox__button">Search</button>
-                </div>
-            </div>
+            </form>
         </div>
         <! -- Espacio para results -->
 
