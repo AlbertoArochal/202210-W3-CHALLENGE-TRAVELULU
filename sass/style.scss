@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+body {
+    height: 3426px;
+}
+
 header {
     height: 122px;
     width: 100vw;
@@ -86,13 +90,15 @@ header {
 
 .searchbody {
     display: flex;
+    margin-top: 96px;
 }
 
 .searchbox {
     display: flex;
     justify-content: center;
-    left: 31px;
-    right: 30px;
+    margin-left: 31px;
+    margin-right: 30px;
+    position: absolute;
 
     form {
         border-radius: 20px;
