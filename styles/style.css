@@ -87,7 +87,6 @@ header .burgerbutton div {
 
 .searchbody {
   display: flex;
-  margin-top: 96px;
 }
 
 .searchbox {
@@ -301,11 +300,13 @@ header .burgerbutton div {
   .search {
     border-bottom: 1px solid rgb(217, 219, 233);
     height: 252px;
+    align-items: baseline;
   }
   .searchmenu {
     width: fit-content;
     height: 200;
     margin-left: 130px;
+    margin-top: 0px;
   }
   .searchmenu .searchmenu__selectors {
     display: flex;

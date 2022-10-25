@@ -95,7 +95,6 @@ header {
 
 .searchbody {
     display: flex;
-    margin-top: 96px;
 }
 
 .searchbox {
@@ -334,11 +333,13 @@ header {
     .search {
         border-bottom: 1px solid variables.$headerborder;
         height: 252px;
+        align-items: baseline;
     }
     .searchmenu {
         width: fit-content;
         height: 200;
         margin-left: 130px;
+        margin-top: 0px;
 
         .searchmenu__selectors {
             display: flex;
