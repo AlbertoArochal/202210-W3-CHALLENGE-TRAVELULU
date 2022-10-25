@@ -41,6 +41,11 @@ header .burgerbutton div {
   border-radius: 20px;
 }
 
+.search {
+  height: 515px;
+  width: auto;
+}
+
 .searchmenu {
   width: 421px;
   height: 252px;
@@ -49,6 +54,9 @@ header .burgerbutton div {
 .searchmenu .searchmenu__selectors * {
   display: block;
   margin-top: 25px;
+}
+.searchmenu .searchmenu__selectors {
+  max-width: 298px;
 }
 .searchmenu h3 {
   margin-top: 77px;
@@ -83,7 +91,6 @@ header .burgerbutton div {
 
 .searchbody {
   display: flex;
-  margin-top: 96px;
 }
 
 .searchbox {
@@ -180,10 +187,113 @@ header .burgerbutton div {
   letter-spacing: 0.75px;
 }
 
+.searchresult {
+  position: relative;
+}
+
+.results {
+  font-family: "Poppins";
+  position: absolute;
+  top: 640px;
+}
+.results h3 {
+  margin-left: 30px;
+  font-weight: 700;
+  margin-bottom: 34px;
+  font-size: 24px;
+}
+.results .results__hotels {
+  margin-left: 30px;
+}
+.results button {
+  background-color: white;
+  color: rgb(95, 46, 234);
+  font-weight: 600;
+  height: 40px;
+  width: 172px;
+  border: 1px solid rgb(217, 219, 233);
+  border-radius: 40px;
+  margin-top: 20px;
+}
+.results button:first-of-type {
+  display: none;
+}
+.results .newcastle__img {
+  display: flex;
+  gap: 20px;
+}
+.results .estate__img {
+  display: flex;
+  gap: 20px;
+}
+.results .premier__img {
+  display: flex;
+  gap: 20px;
+}
+.results .airbnb__img {
+  display: flex;
+  gap: 20px;
+}
+.results .stars {
+  margin-top: 22px;
+  position: relative;
+}
+.results .stars span {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 23px;
+  height: 22px;
+  display: inline-block;
+}
+.results .newcastle .stars {
+  position: relative;
+}
+.results .newcastle .stars span {
+  position: absolute;
+  left: 115px;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 23px;
+  height: 22px;
+  display: inline-block;
+}
+.results .airbnb .stars {
+  position: relative;
+}
+.results .airbnb .stars span {
+  position: absolute;
+  left: 90px;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 23px;
+  height: 22px;
+  display: inline-block;
+}
+.results p {
+  color: rgb(78, 75, 102);
+  font-weight: 400;
+  font-size: 16px;
+}
+.results h4 {
+  color: rgb(95, 46, 234);
+  font-weight: 600;
+  font-size: 24px;
+}
+.results h5 {
+  color: rgb(95, 46, 234);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.results__hotels > div {
+  height: 590px;
+}
+.results__hotels > div div {
+  margin-top: 43px;
+}
+
 @media (min-width: 482px) {
   header {
     height: 122px;
-    width: 1440px;
+    justify-content: space-between;
+    margin: 0 auto;
   }
   header h1 {
     margin-left: 135px;
@@ -191,16 +301,20 @@ header .burgerbutton div {
   header .burgerbutton {
     margin-right: 64px;
   }
-  section {
+  .search {
     border-bottom: 1px solid rgb(217, 219, 233);
+    height: 252px;
+    align-items: baseline;
   }
   .searchmenu {
     width: fit-content;
     height: 200;
     margin-left: 130px;
+    margin-top: 0px;
   }
   .searchmenu .searchmenu__selectors {
     display: flex;
+    max-width: 100%;
   }
   .searchmenu .searchmenu__selectors > :first-child {
     width: 474px;
@@ -231,6 +345,84 @@ header .burgerbutton div {
     width: 156px;
     height: 55px;
     align-self: flex-start;
+  }
+  .results {
+    max-width: 900px;
+    position: absolute;
+    left: 500px;
+    margin-top: -20px;
+    top: 0px;
+  }
+  .results button {
+    width: 155.5px;
+    height: 40px;
+  }
+  .results .results__hotels img:last-of-type {
+    display: none;
+  }
+  .results .stars {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  .results .results > .newcastle {
+    margin-top: 0px;
+  }
+  .results .newcastle {
+    position: relative;
+    border: 2px dotted transparent;
+    height: 300px;
+  }
+  .results .newcastle .newcastle__description {
+    width: fit-content;
+    position: absolute;
+    top: 0px;
+    left: 268px;
+    margin-left: 35px;
+    line-height: 34px;
+  }
+  .results .newcastle .newcastle__description button {
+    top: -7px;
+    left: 341px;
+    position: absolute;
+    margin-top: 0;
+  }
+  .results .estate {
+    position: relative;
+    border: 2px dotted transparent;
+    height: 300px;
+  }
+  .results .estate .estate__description {
+    width: fit-content;
+    position: absolute;
+    top: 0px;
+    left: 268px;
+    margin-left: 35px;
+    line-height: 34px;
+    border: 2px green solid;
+  }
+  .results .estate .estate__description button {
+    top: -7px;
+    left: 341px;
+    position: absolute;
+    margin-top: 0;
+  }
+  .results .estate .estate__description .estate__stars {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .results img {
+    width: 268px;
+    height: 204px;
+  }
+  .results h3 {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .results button:last-of-type {
+    display: none;
+  }
+  .results button:first-of-type {
+    display: block;
   }
 }
 
