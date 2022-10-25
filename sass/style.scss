@@ -51,6 +51,10 @@ header {
         margin-top: 25px;
     }
 
+    .searchmenu__selectors {
+        max-width: 298px;
+    }
+
     h3 {
         margin-top: 77px;
         font-family: variables.$font;
@@ -87,7 +91,9 @@ header {
 @media (min-width: 482px) {
     header {
         height: 122px;
-        width: 1440px;
+        justify-content: space-between;
+        margin: 0 auto;
+
         h1 {
             margin-left: 135px;
         }
@@ -106,6 +112,7 @@ header {
 
         .searchmenu__selectors {
             display: flex;
+            max-width: 100%;
         }
 
         .searchmenu__selectors > :first-child {

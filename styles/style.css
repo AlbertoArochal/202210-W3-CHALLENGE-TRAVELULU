@@ -46,6 +46,9 @@ header .burgerbutton div {
   display: block;
   margin-top: 25px;
 }
+.searchmenu .searchmenu__selectors {
+  max-width: 298px;
+}
 .searchmenu h3 {
   margin-top: 77px;
   font-family: "Poppins";
@@ -80,7 +83,8 @@ header .burgerbutton div {
 @media (min-width: 482px) {
   header {
     height: 122px;
-    width: 1440px;
+    justify-content: space-between;
+    margin: 0 auto;
   }
   header h1 {
     margin-left: 135px;
@@ -98,6 +102,7 @@ header .burgerbutton div {
   }
   .searchmenu .searchmenu__selectors {
     display: flex;
+    max-width: 100%;
   }
   .searchmenu .searchmenu__selectors > :first-child {
     width: 474px;
