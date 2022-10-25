@@ -41,6 +41,11 @@ header {
     }
 }
 
+.search {
+    height: 515px;
+    width: auto;
+}
+
 .searchmenu {
     width: 421px;
     height: 252px;
@@ -88,6 +93,31 @@ header {
     }
 }
 
+.results {
+    font-family: variables.$font;
+    border: 2px green solid;
+
+    h3 {
+        margin-left: 30px;
+        font-weight: 700;
+        margin-bottom: 34px;
+        font-size: 24px;
+    }
+
+    .results__hotels {
+        margin-left: 30px;
+    }
+    button {
+        background-color: white;
+        color: variables.$headerFont;
+        font-weight: 600;
+        height: 40px;
+        width: 172px;
+        border: 1px solid variables.$headerborder;
+        border-radius: 40px;
+    }
+}
+
 @media (min-width: 482px) {
     header {
         height: 122px;
@@ -102,8 +132,9 @@ header {
         }
     }
 
-    section {
+    .search {
         border-bottom: 1px solid variables.$headerborder;
+        height: 252px;
     }
     .searchmenu {
         width: fit-content;
