@@ -106,10 +106,80 @@ header .burgerbutton div {
   width: 172px;
   border: 1px solid rgb(217, 219, 233);
   border-radius: 40px;
+  margin-top: 20px;
+}
+.results button:first-of-type {
+  display: none;
 }
 .results .newcastle__img {
   display: flex;
   gap: 20px;
+}
+.results .estate__img {
+  display: flex;
+  gap: 20px;
+}
+.results .premier__img {
+  display: flex;
+  gap: 20px;
+}
+.results .airbnb__img {
+  display: flex;
+  gap: 20px;
+}
+.results .stars {
+  margin-top: 22px;
+  position: relative;
+}
+.results .stars span {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 23px;
+  height: 22px;
+  display: inline-block;
+}
+.results .newcastle .stars {
+  position: relative;
+}
+.results .newcastle .stars span {
+  position: absolute;
+  left: 115px;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 23px;
+  height: 22px;
+  display: inline-block;
+}
+.results .airbnb .stars {
+  position: relative;
+}
+.results .airbnb .stars span {
+  position: absolute;
+  left: 90px;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 23px;
+  height: 22px;
+  display: inline-block;
+}
+.results p {
+  color: rgb(78, 75, 102);
+  font-weight: 400;
+  font-size: 16px;
+}
+.results h4 {
+  color: rgb(95, 46, 234);
+  font-weight: 600;
+  font-size: 24px;
+}
+.results h5 {
+  color: rgb(95, 46, 234);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.results__hotels > div {
+  height: 590px;
+}
+.results__hotels > div div {
+  margin-top: 43px;
 }
 
 @media (min-width: 482px) {
@@ -166,6 +236,73 @@ header .burgerbutton div {
     width: 156px;
     height: 55px;
     align-self: flex-start;
+  }
+  .results {
+    max-width: 900px;
+  }
+  .results button {
+    width: 155.5px;
+    height: 40px;
+  }
+  .results .results__hotels img:last-of-type {
+    display: none;
+  }
+  .results .stars {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  .results .newcastle {
+    position: relative;
+    border: 2px dotted transparent;
+    height: 300px;
+  }
+  .results .newcastle .newcastle__description {
+    width: fit-content;
+    position: absolute;
+    top: 0px;
+    left: 268px;
+    margin-left: 35px;
+    line-height: 34px;
+  }
+  .results .newcastle .newcastle__description button {
+    top: -7px;
+    left: 341px;
+    position: absolute;
+    margin-top: 0;
+  }
+  .results .estate {
+    position: relative;
+    border: 2px dotted transparent;
+    height: 300px;
+  }
+  .results .estate .estate__description {
+    width: fit-content;
+    position: absolute;
+    top: 0px;
+    left: 268px;
+    margin-left: 35px;
+    line-height: 34px;
+    border: 2px green solid;
+  }
+  .results .estate .estate__description button {
+    top: -7px;
+    left: 341px;
+    position: absolute;
+    margin-top: 0;
+  }
+  .results .estate .estate__description .estate__stars {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .results img {
+    width: 268px;
+    height: 204px;
+  }
+  .results button:last-of-type {
+    display: none;
+  }
+  .results button:first-of-type {
+    display: block;
   }
 }
 
