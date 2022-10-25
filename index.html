@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/styles/style.css" />
         <title>Travelulu</title>
+        <link
+            rel="stylesheet"
+            href="./assets/uicons-regular-rounded/css/uicons-regular-rounded.css"
+        />
     </head>
 
     <body>
@@ -41,49 +45,82 @@
         </section>
 
         <! -- Espacio para Searchmenu -->
+        <div class="searchbody">
+            <div class="searchbox">
+                <form>
+                    <h1>Search</h1>
 
-        <div class="searchbox">
-            <form>
-                <h1>Search</h1>
-                <div>
                     <div>
-                        <label for="destination"
-                            >Destination/property name</label
-                        >
-                        <select name="destination" id="destination">
-                            <option>Gold Coast</option>
-                        </select>
+                        <div>
+                            <label for="destination"
+                                >Destination/property name</label
+                            >
+                            <div class="searchbox__box">
+                                <div class="searchbox__container">
+                                    <span class="icon"
+                                        ><i class="fi fi-rr-search"></i
+                                    ></span>
+                                    <select name="destination" id="destination">
+                                        <option>Gold Coast</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="check-in">Check-in date</label>
+                            <div class="searchbox__box">
+                                <div class="searchbox__container">
+                                    <span class="icon"
+                                        ><i class="fi fi-rr-calendar"></i
+                                    ></span>
+                                    <select name="check-in" id="check-in-date">
+                                        <option>Check-in date</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="check-out">Check-out date</label>
+                            <div class="searchbox__box">
+                                <div class="searchbox__container">
+                                    <span class="icon"
+                                        ><i class="fi fi-rr-calendar"></i
+                                    ></span>
+                                    <select
+                                        name="check-out"
+                                        id="check-out-date"
+                                    >
+                                        <option>Check-out date</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="travellers">Travellers</label>
+                            <div class="searchbox__box">
+                                <div class="searchbox__container">
+                                    <span class="icon"
+                                        ><i class="fi fi-rr-user"></i
+                                    ></span>
+                                    <input
+                                        type="text"
+                                        id="travellers"
+                                        name="travellers"
+                                        value="2 adults - 0 children"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <input
+                                type="submit"
+                                class="searchbox__submit"
+                                value="Search"
+                            />
+                        </div>
                     </div>
-                    <div>
-                        <label for="check-in">Check-in date</label>
-                        <select name="check-in" id="check-in-date">
-                            <option>Check-in date</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="check-out">Check-out date</label>
-                        <select name="check-out" id="check-out-date">
-                            <option>Check-out date</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="travellers">Travellers</label>
-                        <input
-                            type="text"
-                            id="travellers"
-                            name="travellers"
-                            value="2 adults - 0 children"
-                        />
-                    </div>
-                    <div>
-                        <input
-                            type="submit"
-                            class="searchbox__submit"
-                            value="Search"
-                        />
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
         <! -- Espacio para results -->
 

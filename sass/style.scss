@@ -84,6 +84,10 @@ header {
     }
 }
 
+.searchbody {
+    display: flex;
+}
+
 .searchbox {
     display: flex;
     justify-content: center;
@@ -132,24 +136,53 @@ header {
                     line-height: 28px;
                     letter-spacing: 0.75px;
                 }
-                select,
-                input {
+
+                div.searchbox__box {
                     height: 59px;
                     width: 352px;
                     border-radius: 15px;
                     left: 60px;
                     top: calc(50% - 28px / 2 + 2.5px);
-                    font-family: variables.$font;
-                    font-weight: 400;
-                    font-size: 16px;
-                    letter-spacing: 0.75px;
-                    color: variables.$titleActive;
+                    background-color: variables.$whitePrimary;
+                    margin: auto;
+
+                    .searchbox__container {
+                        color: variables.$titleActive;
+                        display: flex;
+                        margin: 0px;
+                        flex-direction: row;
+
+                        span {
+                            width: fit-content;
+                            margin-top: 20px;
+                            height: 24px;
+                            width: 24px;
+                        }
+
+                        select,
+                        input {
+                            background-color: inherit;
+                            border: none;
+                            font-family: variables.$font;
+                            font-weight: 400;
+                            font-size: 16px;
+                            letter-spacing: 0.75px;
+                            width: 80%;
+                        }
+                    }
                 }
 
                 input.searchbox__submit {
+                    height: 59px;
+                    width: 352px;
                     color: white;
                     border-radius: 45px;
                     background-color: variables.$pinkbutton;
+                    border: none;
+                    font-family: variables.$font;
+                    font-weight: 600;
+                    font-size: 16px;
+                    letter-spacing: 0.75px;
                 }
             }
         }
@@ -213,9 +246,5 @@ header {
             height: 55px;
             align-self: flex-start;
         }
-    }
-
-    .searchbox {
-        display: flex;
     }
 }

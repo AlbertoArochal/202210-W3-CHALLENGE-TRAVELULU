@@ -77,6 +77,10 @@ header .burgerbutton div {
   font-size: 16px;
 }
 
+.searchbody {
+  display: flex;
+}
+
 .searchbox {
   display: flex;
   justify-content: center;
@@ -126,23 +130,48 @@ header .burgerbutton div {
   line-height: 28px;
   letter-spacing: 0.75px;
 }
-.searchbox form div div select,
-.searchbox form div div input {
+.searchbox form div div div.searchbox__box {
   height: 59px;
   width: 352px;
   border-radius: 15px;
   left: 60px;
   top: calc(50% - 14px + 2.5px);
+  background-color: rgb(243, 239, 255);
+  margin: auto;
+}
+.searchbox form div div div.searchbox__box .searchbox__container {
+  color: rgb(20, 20, 43);
+  display: flex;
+  margin: 0px;
+  flex-direction: row;
+}
+.searchbox form div div div.searchbox__box .searchbox__container span {
+  width: fit-content;
+  margin-top: 20px;
+  height: 24px;
+  width: 24px;
+}
+.searchbox form div div div.searchbox__box .searchbox__container select,
+.searchbox form div div div.searchbox__box .searchbox__container input {
+  background-color: inherit;
+  border: none;
   font-family: "Poppins";
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.75px;
-  color: rgb(20, 20, 43);
+  width: 80%;
 }
 .searchbox form div div input.searchbox__submit {
+  height: 59px;
+  width: 352px;
   color: white;
   border-radius: 45px;
   background-color: rgb(237, 46, 126);
+  border: none;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.75px;
 }
 
 @media (min-width: 482px) {
@@ -196,9 +225,6 @@ header .burgerbutton div {
     width: 156px;
     height: 55px;
     align-self: flex-start;
-  }
-  .searchbox {
-    display: flex;
   }
 }
 
