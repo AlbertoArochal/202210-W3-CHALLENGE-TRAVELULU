@@ -107,6 +107,10 @@ header .burgerbutton div {
   border: 1px solid rgb(217, 219, 233);
   border-radius: 40px;
 }
+.results .newcastle__img {
+  display: flex;
+  gap: 20px;
+}
 
 @media (min-width: 482px) {
   header {

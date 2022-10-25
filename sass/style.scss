@@ -116,6 +116,10 @@ header {
         border: 1px solid variables.$headerborder;
         border-radius: 40px;
     }
+    .newcastle__img {
+        display: flex;
+        gap: 20px;
+    }
 }
 
 @media (min-width: 482px) {
