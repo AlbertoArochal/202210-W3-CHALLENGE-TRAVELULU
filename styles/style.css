@@ -299,7 +299,6 @@ header .burgerbutton div {
 .banners div {
   position: relative;
   margin: 20px 30px;
-  max-height: 124px;
   font-family: "Poppins";
   border-radius: 16px;
   font-size: 14px;
@@ -311,6 +310,7 @@ header .burgerbutton div {
   background-color: rgb(242, 255, 251);
   color: rgb(0, 150, 109);
   padding: 20px 77px 16px 64px;
+  max-height: 124px;
 }
 .banners .banners__pink {
   border: 2px solid rgb(237, 46, 126);
@@ -319,11 +319,52 @@ header .burgerbutton div {
   padding: 21px 60px 20px 64px;
   max-height: 151px;
 }
+.banners .banners__purple {
+  margin: 0px;
+}
+.banners .banners__purple p {
+  position: absolute;
+  color: white;
+  font-size: 48px;
+  font-family: "Poppins";
+  line-height: 50px;
+  font-weight: 700;
+  margin-top: 128px;
+  z-index: 100;
+}
+.banners .banners__purple .banners__figure {
+  position: relative;
+  max-width: 427px;
+  height: 463px;
+  overflow: hidden;
+  border-radius: 45px;
+  text-align: center;
+}
+.banners .banners__purple .banners__figure .figures__1 {
+  position: absolute;
+}
+.banners .banners__purple .banners__figure .figures__3 {
+  position: absolute;
+  left: 49%;
+}
+.banners .banners__purple .banners__figure button {
+  position: absolute;
+  top: 70%;
+  background-color: transparent;
+  color: white;
+  border: 2px white solid;
+  width: 353px;
+  height: 64px;
+  border-radius: 40px;
+  margin-left: 29px;
+  font-size: 16px;
+  z-index: 100;
+}
 
 footer {
   display: flex;
   position: absolute;
-  top: 4082px;
+  top: 4432px;
   flex-direction: column;
   align-items: center;
   left: 30px;
