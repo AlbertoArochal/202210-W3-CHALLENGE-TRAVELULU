@@ -512,7 +512,7 @@ footer {
             height: 300px;
 
             .newcastle__description {
-                width: fit-content;
+                width: 400px;
                 position: absolute;
                 top: 0px;
                 left: 268px;
@@ -534,7 +534,7 @@ footer {
             height: 300px;
 
             .estate__description {
-                width: fit-content;
+                width: 400px;
                 position: absolute;
                 top: 0px;
                 left: 268px;
@@ -550,6 +550,59 @@ footer {
                 }
 
                 .estate__stars {
+                    margin-top: 0px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .premier {
+            position: relative;
+            border: 2px dotted transparent;
+            height: 300px;
+            .premier__description {
+                width: 400px;
+                position: absolute;
+                top: 0px;
+                left: 268px;
+                margin-left: 35px;
+                line-height: 34px;
+                border: 2px green solid;
+
+                button {
+                    top: -7px;
+                    left: 341px;
+                    position: absolute;
+                    margin-top: 0;
+                }
+
+                .premier__stars {
+                    margin-top: 0px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .airbnb {
+            position: relative;
+            border: 2px dotted transparent;
+            height: 300px;
+            .airbnb__description {
+                width: 400px;
+                position: absolute;
+                top: 0px;
+                left: 268px;
+                margin-left: 35px;
+                line-height: 34px;
+                border: 2px green solid;
+                button {
+                    top: -7px;
+                    left: 341px;
+                    position: absolute;
+                    margin-top: 0;
+                }
+
+                .premier__stars {
                     margin-top: 0px;
                     margin-bottom: 20px;
                 }

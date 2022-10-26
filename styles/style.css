@@ -468,7 +468,7 @@ footer section {
     height: 300px;
   }
   .results .newcastle .newcastle__description {
-    width: fit-content;
+    width: 400px;
     position: absolute;
     top: 0px;
     left: 268px;
@@ -487,7 +487,7 @@ footer section {
     height: 300px;
   }
   .results .estate .estate__description {
-    width: fit-content;
+    width: 400px;
     position: absolute;
     top: 0px;
     left: 268px;
@@ -502,6 +502,54 @@ footer section {
     margin-top: 0;
   }
   .results .estate .estate__description .estate__stars {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .results .premier {
+    position: relative;
+    border: 2px dotted transparent;
+    height: 300px;
+  }
+  .results .premier .premier__description {
+    width: 400px;
+    position: absolute;
+    top: 0px;
+    left: 268px;
+    margin-left: 35px;
+    line-height: 34px;
+    border: 2px green solid;
+  }
+  .results .premier .premier__description button {
+    top: -7px;
+    left: 341px;
+    position: absolute;
+    margin-top: 0;
+  }
+  .results .premier .premier__description .premier__stars {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .results .airbnb {
+    position: relative;
+    border: 2px dotted transparent;
+    height: 300px;
+  }
+  .results .airbnb .airbnb__description {
+    width: 400px;
+    position: absolute;
+    top: 0px;
+    left: 268px;
+    margin-left: 35px;
+    line-height: 34px;
+    border: 2px green solid;
+  }
+  .results .airbnb .airbnb__description button {
+    top: -7px;
+    left: 341px;
+    position: absolute;
+    margin-top: 0;
+  }
+  .results .airbnb .airbnb__description .premier__stars {
     margin-top: 0px;
     margin-bottom: 20px;
   }
