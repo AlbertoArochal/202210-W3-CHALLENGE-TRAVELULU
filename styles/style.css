@@ -289,6 +289,101 @@ header .burgerbutton div {
   margin-top: 43px;
 }
 
+footer {
+  display: flex;
+  position: absolute;
+  top: 4082px;
+  flex-direction: column;
+  align-items: center;
+  left: 30px;
+}
+footer div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer .footer__copyright {
+  bottom: 306px;
+}
+footer .footer__copyright p {
+  width: 421px;
+  height: 246px;
+  top: 4161px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: rgb(78, 75, 102);
+  bottom: 306px;
+}
+footer .footer__copyright .footer__copyright--tittle {
+  font-family: "Poppins";
+  color: rgb(95, 46, 234);
+  width: 205px;
+  height: 55px;
+  left: 138px;
+  top: 4082px;
+  font-weight: 700;
+  font-size: 34.375px;
+  line-height: 55px;
+  text-align: center;
+  bottom: 576px;
+  margin-bottom: 24px;
+}
+footer .footer__contact {
+  margin-bottom: 100px;
+  bottom: 100px;
+}
+footer .footer__contact h2 {
+  width: 121px;
+  height: 32px;
+  left: 180px;
+  top: 4400px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: rgb(20, 20, 43);
+  margin-bottom: 23px;
+}
+footer .footer__contact a {
+  width: 251px;
+  height: 28px;
+  left: 115px;
+  top: 4455px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: rgb(95, 46, 234);
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+footer .footer__contact p {
+  width: 301px;
+  height: 112px;
+  top: 4501px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.65px;
+  color: rgb(110, 113, 145);
+}
+footer section {
+  visibility: hidden;
+  height: 0px;
+}
+
 @media (min-width: 482px) {
   header {
     height: 122px;
@@ -423,6 +518,108 @@ header .burgerbutton div {
   }
   .results button:first-of-type {
     display: block;
+  }
+  footer {
+    height: 350px;
+    width: 1240px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: normal;
+  }
+  footer .footer__copyright {
+    align-items: normal;
+    margin-left: 140px;
+  }
+  footer .footer__copyright p {
+    text-align: left;
+    width: 257px;
+    height: 246px;
+    left: 140px;
+    top: 2504px;
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+  }
+  footer .footer__copyright p .footer__copyright--bold {
+    font-weight: bold;
+  }
+  footer .footer__copyright .footer__copyright--tittle {
+    width: 102px;
+    height: 32px;
+    left: 140px;
+    top: 2442px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.75px;
+  }
+  footer section {
+    visibility: visible;
+    display: flex;
+  }
+  footer section div {
+    display: flex;
+    align-items: baseline;
+  }
+  footer section div h1 {
+    width: 91px;
+    height: 32px;
+    left: 606px;
+    top: 2445px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.75px;
+    color: rgb(20, 20, 43);
+    bottom: 351px;
+    margin-bottom: 23px;
+    margin-left: 155px;
+  }
+  footer section div p {
+    width: 115px;
+    height: 24px;
+    left: 606px;
+    top: 2500px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    color: rgb(110, 113, 145);
+    margin-left: 155px;
+    margin-bottom: 22px;
+  }
+  footer .footer__contact {
+    align-items: normal;
+    margin-left: 151px;
+  }
+  footer .footer__contact h2 {
+    width: 87px;
+    left: 1122px;
+    top: 2445px;
+    line-height: 32px;
+  }
+  footer .footer__contact a {
+    width: 180px;
+    height: 24px;
+    left: 1122px;
+    top: 2500px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+  }
+  footer .footer__contact p {
+    width: 257px;
+    height: 246px;
+    left: 1123px;
+    top: 2546px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    text-align: left;
   }
 }
 
