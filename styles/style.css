@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  height: 122px;
+  height: 115px;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -42,7 +42,7 @@ header .burgerbutton div {
 }
 
 .search {
-  height: 515px;
+  height: 445px;
   width: auto;
 }
 
@@ -54,6 +54,9 @@ header .burgerbutton div {
 .searchmenu .searchmenu__selectors * {
   display: block;
   margin-top: 25px;
+}
+.searchmenu .searchmenu__selectors select {
+  border: black solid 2px;
 }
 .searchmenu .searchmenu__selectors {
   max-width: 298px;
@@ -211,7 +214,7 @@ header .burgerbutton div {
   font-weight: 600;
   height: 40px;
   width: 172px;
-  border: 1px solid rgb(217, 219, 233);
+  border: 2px solid rgb(217, 219, 233);
   border-radius: 40px;
   margin-top: 20px;
 }
@@ -283,10 +286,38 @@ header .burgerbutton div {
 }
 
 .results__hotels > div {
-  height: 590px;
+  height: 560px;
 }
 .results__hotels > div div {
-  margin-top: 43px;
+  margin-top: 3px;
+}
+
+.banners {
+  position: absolute;
+  top: 3600px;
+}
+.banners div {
+  position: relative;
+  margin: 20px 30px;
+  max-height: 124px;
+  font-family: "Poppins";
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.banners .banners__green {
+  border: 2px rgb(0, 150, 109) solid;
+  background-color: rgb(242, 255, 251);
+  color: rgb(0, 150, 109);
+  padding: 20px 77px 16px 64px;
+}
+.banners .banners__pink {
+  border: 2px solid rgb(237, 46, 126);
+  background-color: rgb(255, 243, 248);
+  color: rgb(237, 46, 126);
+  padding: 21px 60px 20px 64px;
+  max-height: 151px;
 }
 
 footer {
@@ -441,16 +472,21 @@ footer section {
     height: 55px;
     align-self: flex-start;
   }
+  .searchbox {
+    margin-top: 45px;
+    margin-left: 130px;
+  }
   .results {
     max-width: 900px;
     position: absolute;
-    left: 500px;
+    left: 550px;
     margin-top: -20px;
-    top: 0px;
+    top: 41px;
   }
   .results button {
     width: 155.5px;
     height: 40px;
+    left: 285px;
   }
   .results .results__hotels img:last-of-type {
     display: none;
@@ -477,7 +513,7 @@ footer section {
   }
   .results .newcastle .newcastle__description button {
     top: -7px;
-    left: 341px;
+    left: 285px;
     position: absolute;
     margin-top: 0;
   }
@@ -493,11 +529,9 @@ footer section {
     left: 268px;
     margin-left: 35px;
     line-height: 34px;
-    border: 2px green solid;
   }
   .results .estate .estate__description button {
     top: -7px;
-    left: 341px;
     position: absolute;
     margin-top: 0;
   }
@@ -517,11 +551,9 @@ footer section {
     left: 268px;
     margin-left: 35px;
     line-height: 34px;
-    border: 2px green solid;
   }
   .results .premier .premier__description button {
     top: -7px;
-    left: 341px;
     position: absolute;
     margin-top: 0;
   }
@@ -541,11 +573,9 @@ footer section {
     left: 268px;
     margin-left: 35px;
     line-height: 34px;
-    border: 2px green solid;
   }
   .results .airbnb .airbnb__description button {
     top: -7px;
-    left: 341px;
     position: absolute;
     margin-top: 0;
   }
@@ -567,12 +597,18 @@ footer section {
   .results button:first-of-type {
     display: block;
   }
+  .banners {
+    position: absolute;
+    top: 1672px;
+  }
   footer {
     height: 350px;
     width: 1240px;
     flex-direction: row;
     justify-content: space-between;
     align-items: normal;
+    position: relative;
+    top: 2300px;
   }
   footer .footer__copyright {
     align-items: normal;

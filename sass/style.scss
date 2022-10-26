@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    height: 122px;
+    height: 115px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -46,7 +46,7 @@ header {
 }
 
 .search {
-    height: 515px;
+    height: 445px;
     width: auto;
 }
 
@@ -58,6 +58,10 @@ header {
     .searchmenu__selectors * {
         display: block;
         margin-top: 25px;
+    }
+
+    .searchmenu__selectors select {
+        border: black solid 2px;
     }
 
     .searchmenu__selectors {
@@ -228,7 +232,7 @@ header {
         font-weight: 600;
         height: 40px;
         width: 172px;
-        border: 1px solid variables.$headerborder;
+        border: 2px solid variables.$headerborder;
         border-radius: 40px;
         margin-top: 20px;
     }
@@ -314,9 +318,39 @@ header {
 }
 
 .results__hotels > div {
-    height: 590px;
+    height: 560px;
     div {
-        margin-top: 43px;
+        margin-top: 3px;
+    }
+}
+
+.banners {
+    position: absolute;
+    top: 3600px;
+    div {
+        position: relative;
+        margin: 20px 30px;
+        max-height: 124px;
+        font-family: variables.$font;
+        border-radius: 16px;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 500;
+    }
+
+    .banners__green {
+        border: 2px variables.$greenBannerText solid;
+        background-color: variables.$greenBannerBackground;
+        color: variables.$greenBannerText;
+        padding: 20px 77px 16px 64px;
+    }
+
+    .banners__pink {
+        border: 2px solid variables.$pinkBannerText;
+        background-color: variables.$pinkBannerBackground;
+        color: variables.$pinkBannerText;
+        padding: 21px 60px 20px 64px;
+        max-height: 151px;
     }
 }
 
@@ -480,16 +514,22 @@ footer {
             align-self: flex-start;
         }
     }
+
+    .searchbox {
+        margin-top: 45px;
+        margin-left: 130px;
+    }
     .results {
         max-width: 900px;
         position: absolute;
-        left: 500px;
+        left: 550px;
         margin-top: -20px;
-        top: 0px;
+        top: 41px;
 
         button {
             width: 155.5px;
             height: 40px;
+            left: 285px;
         }
         .results__hotels {
             img:last-of-type {
@@ -521,7 +561,7 @@ footer {
 
                 button {
                     top: -7px;
-                    left: 341px;
+                    left: 285px;
                     position: absolute;
                     margin-top: 0;
                 }
@@ -540,11 +580,9 @@ footer {
                 left: 268px;
                 margin-left: 35px;
                 line-height: 34px;
-                border: 2px green solid;
 
                 button {
                     top: -7px;
-                    left: 341px;
                     position: absolute;
                     margin-top: 0;
                 }
@@ -567,11 +605,9 @@ footer {
                 left: 268px;
                 margin-left: 35px;
                 line-height: 34px;
-                border: 2px green solid;
 
                 button {
                     top: -7px;
-                    left: 341px;
                     position: absolute;
                     margin-top: 0;
                 }
@@ -594,10 +630,8 @@ footer {
                 left: 268px;
                 margin-left: 35px;
                 line-height: 34px;
-                border: 2px green solid;
                 button {
                     top: -7px;
-                    left: 341px;
                     position: absolute;
                     margin-top: 0;
                 }
@@ -625,12 +659,19 @@ footer {
             display: block;
         }
     }
+
+    .banners {
+        position: absolute;
+        top: 1672px;
+    }
     footer {
         height: 350px;
         width: 1240px;
         flex-direction: row;
         justify-content: space-between;
         align-items: normal;
+        position: relative;
+        top: 2300px;
         .footer__copyright {
             align-items: normal;
             margin-left: 140px;
