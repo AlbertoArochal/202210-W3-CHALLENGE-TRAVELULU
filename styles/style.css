@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  height: 122px;
+  height: 115px;
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -42,7 +42,7 @@ header .burgerbutton div {
 }
 
 .search {
-  height: 515px;
+  height: 445px;
   width: auto;
 }
 
@@ -54,6 +54,9 @@ header .burgerbutton div {
 .searchmenu .searchmenu__selectors * {
   display: block;
   margin-top: 25px;
+}
+.searchmenu .searchmenu__selectors select {
+  border: black solid 2px;
 }
 .searchmenu .searchmenu__selectors {
   max-width: 298px;
@@ -211,7 +214,7 @@ header .burgerbutton div {
   font-weight: 600;
   height: 40px;
   width: 172px;
-  border: 1px solid rgb(217, 219, 233);
+  border: 2px solid rgb(217, 219, 233);
   border-radius: 40px;
   margin-top: 20px;
 }
@@ -283,16 +286,85 @@ header .burgerbutton div {
 }
 
 .results__hotels > div {
-  height: 590px;
+  height: 560px;
 }
 .results__hotels > div div {
-  margin-top: 43px;
+  margin-top: 3px;
+}
+
+.banners {
+  position: absolute;
+  top: 3600px;
+}
+.banners div {
+  position: relative;
+  margin: 20px 30px;
+  font-family: "Poppins";
+  border-radius: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.banners .banners__green {
+  border: 2px rgb(0, 150, 109) solid;
+  background-color: rgb(242, 255, 251);
+  color: rgb(0, 150, 109);
+  padding: 20px 77px 16px 64px;
+  max-height: 124px;
+}
+.banners .banners__pink {
+  border: 2px solid rgb(237, 46, 126);
+  background-color: rgb(255, 243, 248);
+  color: rgb(237, 46, 126);
+  padding: 21px 60px 20px 64px;
+  max-height: 151px;
+}
+.banners .banners__purple {
+  margin: 0px;
+}
+.banners .banners__purple p {
+  position: absolute;
+  color: white;
+  font-size: 48px;
+  font-family: "Poppins";
+  line-height: 50px;
+  font-weight: 700;
+  margin-top: 128px;
+  z-index: 100;
+}
+.banners .banners__purple .banners__figure {
+  position: relative;
+  max-width: 427px;
+  height: 463px;
+  overflow: hidden;
+  border-radius: 45px;
+  text-align: center;
+}
+.banners .banners__purple .banners__figure .figures__1 {
+  position: absolute;
+}
+.banners .banners__purple .banners__figure .figures__3 {
+  position: absolute;
+  left: 49%;
+}
+.banners .banners__purple .banners__figure button {
+  position: absolute;
+  top: 70%;
+  background-color: transparent;
+  color: white;
+  border: 2px white solid;
+  width: 353px;
+  height: 64px;
+  border-radius: 40px;
+  margin-left: 29px;
+  font-size: 16px;
+  z-index: 100;
 }
 
 footer {
   display: flex;
   position: absolute;
-  top: 4082px;
+  top: 4432px;
   flex-direction: column;
   align-items: center;
   left: 30px;
@@ -441,16 +513,21 @@ footer section {
     height: 55px;
     align-self: flex-start;
   }
+  .searchbox {
+    margin-top: 45px;
+    margin-left: 130px;
+  }
   .results {
     max-width: 900px;
     position: absolute;
-    left: 500px;
+    left: 550px;
     margin-top: -20px;
-    top: 0px;
+    top: 41px;
   }
   .results button {
     width: 155.5px;
     height: 40px;
+    left: 285px;
   }
   .results .results__hotels img:last-of-type {
     display: none;
@@ -468,7 +545,7 @@ footer section {
     height: 300px;
   }
   .results .newcastle .newcastle__description {
-    width: fit-content;
+    width: 400px;
     position: absolute;
     top: 0px;
     left: 268px;
@@ -477,7 +554,7 @@ footer section {
   }
   .results .newcastle .newcastle__description button {
     top: -7px;
-    left: 341px;
+    left: 285px;
     position: absolute;
     margin-top: 0;
   }
@@ -487,21 +564,63 @@ footer section {
     height: 300px;
   }
   .results .estate .estate__description {
-    width: fit-content;
+    width: 400px;
     position: absolute;
     top: 0px;
     left: 268px;
     margin-left: 35px;
     line-height: 34px;
-    border: 2px green solid;
   }
   .results .estate .estate__description button {
     top: -7px;
-    left: 341px;
     position: absolute;
     margin-top: 0;
   }
   .results .estate .estate__description .estate__stars {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .results .premier {
+    position: relative;
+    border: 2px dotted transparent;
+    height: 300px;
+  }
+  .results .premier .premier__description {
+    width: 400px;
+    position: absolute;
+    top: 0px;
+    left: 268px;
+    margin-left: 35px;
+    line-height: 34px;
+  }
+  .results .premier .premier__description button {
+    top: -7px;
+    position: absolute;
+    margin-top: 0;
+  }
+  .results .premier .premier__description .premier__stars {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .results .airbnb {
+    position: relative;
+    border: 2px dotted transparent;
+    height: 300px;
+  }
+  .results .airbnb .airbnb__description {
+    width: 400px;
+    position: absolute;
+    top: 0px;
+    left: 268px;
+    margin-left: 35px;
+    line-height: 34px;
+  }
+  .results .airbnb .airbnb__description button {
+    top: -7px;
+    position: absolute;
+    margin-top: 0;
+  }
+  .results .airbnb .airbnb__description .premier__stars {
     margin-top: 0px;
     margin-bottom: 20px;
   }
@@ -519,12 +638,18 @@ footer section {
   .results button:first-of-type {
     display: block;
   }
+  .banners {
+    position: absolute;
+    top: 1672px;
+  }
   footer {
     height: 350px;
     width: 1240px;
     flex-direction: row;
     justify-content: space-between;
     align-items: normal;
+    position: relative;
+    top: 2300px;
   }
   footer .footer__copyright {
     align-items: normal;
@@ -620,6 +745,52 @@ footer section {
     line-height: 24px;
     letter-spacing: 0.75px;
     text-align: left;
+  }
+  .banners {
+    max-width: 1140px;
+    margin-left: 138px;
+  }
+  .banners div {
+    width: 1167px;
+  }
+  .banners .banners__green {
+    padding-left: 64px;
+    padding-right: 641px;
+  }
+  .banners .banners__pink {
+    padding-left: 64px;
+    padding-right: 183px;
+  }
+  .banners .banners__purple {
+    width: 1826px;
+    margin-top: 30px;
+  }
+  .banners .banners__purple .banners__figure {
+    max-width: 1168px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .banners .banners__purple button {
+    left: 30%;
+    width: 243px;
+    height: 64px;
+    font-size: 16px;
+    bottom: 0px;
+  }
+  .banners .banners__purple p {
+    max-width: 605px;
+    position: absolute;
+    z-index: 100;
+    left: 25%;
+  }
+  .banners .banners__purple .figures__2 {
+    width: 1168px;
+  }
+  .banners .banners__purple .figures__1 {
+    width: 1168px;
+  }
+  .banners .banners__purple .figures__3 {
+    width: 1168px;
   }
 }
 
