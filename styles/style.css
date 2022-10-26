@@ -746,6 +746,52 @@ footer section {
     letter-spacing: 0.75px;
     text-align: left;
   }
+  .banners {
+    max-width: 1140px;
+    margin-left: 138px;
+  }
+  .banners div {
+    width: 1167px;
+  }
+  .banners .banners__green {
+    padding-left: 64px;
+    padding-right: 641px;
+  }
+  .banners .banners__pink {
+    padding-left: 64px;
+    padding-right: 183px;
+  }
+  .banners .banners__purple {
+    width: 1826px;
+    margin-top: 30px;
+  }
+  .banners .banners__purple .banners__figure {
+    max-width: 1168px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .banners .banners__purple button {
+    left: 30%;
+    width: 243px;
+    height: 64px;
+    font-size: 16px;
+    bottom: 0px;
+  }
+  .banners .banners__purple p {
+    max-width: 605px;
+    position: absolute;
+    z-index: 100;
+    left: 25%;
+  }
+  .banners .banners__purple .figures__2 {
+    width: 1168px;
+  }
+  .banners .banners__purple .figures__1 {
+    width: 1168px;
+  }
+  .banners .banners__purple .figures__3 {
+    width: 1168px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

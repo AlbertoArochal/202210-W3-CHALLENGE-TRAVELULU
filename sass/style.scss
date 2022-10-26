@@ -812,4 +812,55 @@ footer {
             }
         }
     }
+    .banners {
+        max-width: 1140px;
+        margin-left: 138px;
+        div {
+            width: 1167px;
+        }
+        .banners__green {
+            padding-left: 64px;
+            padding-right: 641px;
+        }
+
+        .banners__pink {
+            padding-left: 64px;
+            padding-right: 183px;
+        }
+
+        .banners__purple {
+            width: 1826px;
+            margin-top: 30px;
+            .banners__figure {
+                max-width: 1168px;
+                overflow: hidden;
+                text-align: center;
+            }
+            button {
+                left: 30%;
+                width: 243px;
+                height: 64px;
+                font-size: 16px;
+                bottom: 0px;
+            }
+
+            p {
+                max-width: 605px;
+                position: absolute;
+                z-index: 100;
+                left: 25%;
+            }
+
+            .figures__2 {
+                width: 1168px;
+            }
+            .figures__1 {
+                width: 1168px;
+            }
+
+            .figures__3 {
+                width: 1168px;
+            }
+        }
+    }
 }
