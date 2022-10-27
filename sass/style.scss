@@ -355,6 +355,21 @@ header {
         color: variables.$greenBannerText;
         padding: 20px 77px 16px 64px;
         max-height: 124px;
+        .green__emojis {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 380px;
+            margin: 0px;
+            left: 24px;
+            .emojis__cross {
+                margin-top: 28px;
+            }
+            * {
+                display: flex;
+                cursor: pointer;
+            }
+        }
     }
 
     .banners__pink {
@@ -363,6 +378,21 @@ header {
         color: variables.$pinkBannerText;
         padding: 21px 60px 20px 64px;
         max-height: 151px;
+        .pink__emojis {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 380px;
+            margin: 0px;
+            left: 24px;
+            .emojis__cross {
+                margin-top: 38px;
+            }
+            * {
+                display: flex;
+                cursor: pointer;
+            }
+        }
     }
 
     .banners__purple {
@@ -404,6 +434,7 @@ header {
                 margin-left: 29px;
                 font-size: 16px;
                 z-index: 100;
+                cursor: pointer;
             }
         }
     }
@@ -836,17 +867,34 @@ footer {
     .banners {
         max-width: 1140px;
         margin-left: 138px;
+        margin-top: 50px;
         div {
             width: 1167px;
         }
         .banners__green {
             padding-left: 64px;
             padding-right: 641px;
+            .green__emojis {
+                width: 1088px;
+                .emojis__cross {
+                    margin-top: 17px;
+                }
+            }
         }
 
         .banners__pink {
             padding-left: 64px;
             padding-right: 183px;
+            .pink__emojis {
+                width: 1088px;
+                .emojis__cross {
+                    margin-top: 17px;
+                }
+            }
+        }
+
+        .emojis__cross {
+            margin-top: 29px;
         }
 
         .banners__purple {

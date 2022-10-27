@@ -322,12 +322,42 @@ header .burgerbutton div {
   padding: 20px 77px 16px 64px;
   max-height: 124px;
 }
+.banners .banners__green .green__emojis {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+  margin: 0px;
+  left: 24px;
+}
+.banners .banners__green .green__emojis .emojis__cross {
+  margin-top: 28px;
+}
+.banners .banners__green .green__emojis * {
+  display: flex;
+  cursor: pointer;
+}
 .banners .banners__pink {
   border: 2px solid rgb(237, 46, 126);
   background-color: rgb(255, 243, 248);
   color: rgb(237, 46, 126);
   padding: 21px 60px 20px 64px;
   max-height: 151px;
+}
+.banners .banners__pink .pink__emojis {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+  margin: 0px;
+  left: 24px;
+}
+.banners .banners__pink .pink__emojis .emojis__cross {
+  margin-top: 38px;
+}
+.banners .banners__pink .pink__emojis * {
+  display: flex;
+  cursor: pointer;
 }
 .banners .banners__purple {
   margin: 0px;
@@ -369,6 +399,7 @@ header .burgerbutton div {
   margin-left: 29px;
   font-size: 16px;
   z-index: 100;
+  cursor: pointer;
 }
 
 footer {
@@ -767,6 +798,7 @@ footer section {
   .banners {
     max-width: 1140px;
     margin-left: 138px;
+    margin-top: 50px;
   }
   .banners div {
     width: 1167px;
@@ -775,9 +807,24 @@ footer section {
     padding-left: 64px;
     padding-right: 641px;
   }
+  .banners .banners__green .green__emojis {
+    width: 1088px;
+  }
+  .banners .banners__green .green__emojis .emojis__cross {
+    margin-top: 17px;
+  }
   .banners .banners__pink {
     padding-left: 64px;
     padding-right: 183px;
+  }
+  .banners .banners__pink .pink__emojis {
+    width: 1088px;
+  }
+  .banners .banners__pink .pink__emojis .emojis__cross {
+    margin-top: 17px;
+  }
+  .banners .emojis__cross {
+    margin-top: 29px;
   }
   .banners .banners__purple {
     width: 1826px;
