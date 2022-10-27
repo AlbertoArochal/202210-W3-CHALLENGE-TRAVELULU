@@ -113,7 +113,7 @@ header .burgerbutton div {
   display: flex;
   flex-direction: column;
 }
-.searchbox form h1 {
+.searchbox form h2 {
   color: rgb(188, 164, 255);
   font-family: "Poppins";
   display: flex;
@@ -686,7 +686,7 @@ footer section {
     display: flex;
     align-items: baseline;
   }
-  footer section div h1 {
+  footer section div h2 {
     width: 91px;
     height: 32px;
     left: 606px;

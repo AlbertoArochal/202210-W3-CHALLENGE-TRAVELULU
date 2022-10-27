@@ -121,7 +121,7 @@ header {
         top: 673px;
         display: flex;
         flex-direction: column;
-        h1 {
+        h2 {
             color: variables.$searchMenutittle;
             font-family: variables.$font;
             display: flex;
@@ -748,7 +748,7 @@ footer {
             div {
                 display: flex;
                 align-items: baseline;
-                h1 {
+                h2 {
                     width: 91px;
                     height: 32px;
                     left: 606px;
